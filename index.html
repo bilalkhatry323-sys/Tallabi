@@ -14,19 +14,29 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f5f7fb;
-      color: #222;
+      color: #1e293b;
     }
 
     header {
       background: #2563eb;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 35px 20px;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 42px;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 19px;
     }
 
     nav {
       background: white;
-      padding: 12px;
+      padding: 15px;
       text-align: center;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
@@ -34,67 +44,79 @@
     nav a {
       color: #2563eb;
       text-decoration: none;
-      margin: 0 12px;
+      margin: 0 15px;
       font-weight: bold;
     }
 
-    .hero {
-      text-align: center;
-      padding: 70px 20px;
-    }
-
-    .hero h1 {
-      font-size: 42px;
-      margin-bottom: 15px;
-    }
-
-    .hero p {
-      font-size: 20px;
-      color: #555;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 14px 28px;
-      background: #2563eb;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-    }
-
-    .subjects {
-      padding: 30px 20px;
-      max-width: 1000px;
+    .container {
+      max-width: 1100px;
       margin: auto;
+      padding: 40px 20px;
     }
 
-    .subjects h2 {
+    .welcome {
       text-align: center;
-      margin-bottom: 25px;
+      padding: 30px 0;
+    }
+
+    .welcome h2 {
+      font-size: 30px;
+    }
+
+    .welcome p {
+      color: #64748b;
+      font-size: 18px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 35px 0 25px;
     }
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
     }
 
     .card {
       background: white;
-      padding: 25px;
-      border-radius: 15px;
+      border-radius: 16px;
+      padding: 30px 20px;
       text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #2563eb;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #64748b;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 22px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 9px;
     }
 
     footer {
-      margin-top: 50px;
-      padding: 20px;
+      margin-top: 40px;
       background: #1e293b;
       color: white;
       text-align: center;
+      padding: 25px;
     }
   </style>
 </head>
@@ -103,56 +125,116 @@
 
   <header>
     <h1>طالبي</h1>
-    <p>منصة تعليمية للطالب الموريتاني</p>
+    <p>منصة تعليمية للطلاب</p>
   </header>
 
   <nav>
     <a href="#">الرئيسية</a>
-    <a href="#subjects">المواد</a>
+    <a href="#levels">المستويات</a>
     <a href="#about">عن طالبي</a>
   </nav>
 
-  <section class="hero">
-    <h1>مرحبًا بك في طالبي</h1>
-    <p>تعلّم، راجع، وطوّر مستواك الدراسي.</p>
-    <a class="button" href="#subjects">ابدأ التعلم</a>
-  </section>
+  <main class="container">
 
-  <section class="subjects" id="subjects">
-    <h2>المواد الدراسية</h2>
+    <section class="welcome">
+      <h2>مرحباً بك في طالبي</h2>
+      <p>
+        اختر مرحلتك الدراسية، ثم مستواك، وبعدها المادة التي تريد دراستها.
+      </p>
+    </section>
 
-    <div class="cards">
-      <div class="card">
-        <h3>الرياضيات</h3>
-        <p>دروس وتمارين للمراجعة.</p>
+    <section id="levels">
+
+      <h2 class="section-title">اختر المرحلة الدراسية</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>المرحلة الابتدائية</h3>
+          <p>دروس ومراجعات للمستويات الابتدائية.</p>
+          <a class="button" href="#primary">الدخول</a>
+        </div>
+
+        <div class="card">
+          <h3>المرحلة الإعدادية</h3>
+          <p>دروس ومراجعات للمستويات الإعدادية.</p>
+          <a class="button" href="#middle">الدخول</a>
+        </div>
+
+        <div class="card">
+          <h3>المرحلة الثانوية</h3>
+          <p>دروس ومراجعات للمستويات الثانوية.</p>
+          <a class="button" href="#high">الدخول</a>
+        </div>
+
       </div>
+    </section>
 
-      <div class="card">
-        <h3>الفيزياء</h3>
-        <p>مفاهيم وتمارين مبسطة.</p>
+    <section id="middle">
+
+      <h2 class="section-title">المستويات الإعدادية</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>الأولى إعدادي</h3>
+          <p>Mathématiques - Physique - Français</p>
+          <a class="button" href="#">اختيار المستوى</a>
+        </div>
+
+        <div class="card">
+          <h3>الثانية إعدادي</h3>
+          <p>Mathématiques - Physique - Français</p>
+          <a class="button" href="#">اختيار المستوى</a>
+        </div>
+
+        <div class="card">
+          <h3>الثالثة إعدادي</h3>
+          <p>Mathématiques - Physique - Français</p>
+          <a class="button" href="#">اختيار المستوى</a>
+        </div>
+
       </div>
+    </section>
 
-      <div class="card">
-        <h3>الكيمياء</h3>
-        <p>مراجعة الدروس الأساسية.</p>
+    <section id="high">
+
+      <h2 class="section-title">المستويات الثانوية</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>الأولى ثانوي</h3>
+          <p>Mathématiques - Physique - Français</p>
+          <a class="button" href="#">اختيار المستوى</a>
+        </div>
+
+        <div class="card">
+          <h3>الثانية ثانوي</h3>
+          <p>Mathématiques - Physique - Français</p>
+          <a class="button" href="#">اختيار المستوى</a>
+        </div>
+
+        <div class="card">
+          <h3>الثالثة ثانوي</h3>
+          <p>Mathématiques - Physique - Français</p>
+          <a class="button" href="#">اختيار المستوى</a>
+        </div>
+
       </div>
+    </section>
 
-      <div class="card">
-        <h3>اللغة العربية</h3>
-        <p>دروس ومراجعات لغوية.</p>
-      </div>
-    </div>
-  </section>
+    <section id="about">
+      <h2 class="section-title">عن طالبي</h2>
+      <p style="text-align:center;">
+        طالبي منصة تعليمية تساعد الطلاب على الوصول إلى الدروس والمراجعات بطريقة منظمة.
+      </p>
+    </section>
 
-  <section class="subjects" id="about">
-    <h2>عن طالبي</h2>
-    <p style="text-align:center;">
-      طالبي منصة تعليمية تهدف إلى مساعدة الطلاب على التعلم والمراجعة بطريقة بسيطة.
-    </p>
-  </section>
+  </main>
 
   <footer>
-    <p>© 2026 طالبي - منصة تعليمية</p>
+    <p>© 2026 طالبي</p>
   </footer>
 
 </body>
