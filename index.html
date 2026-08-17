@@ -3,11 +3,157 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>طالبي</title>
+  <title>طالبي | منصة تعليمية</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    header {
+      background: #2563eb;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: white;
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    nav a {
+      color: #2563eb;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #555;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 28px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .subjects {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .subjects h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      background: #1e293b;
+      color: white;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>مرحبًا بك في طالبي</h1>
-  <p>منصة تعليمية للطالب الموريتاني</p>
+
+  <header>
+    <h1>طالبي</h1>
+    <p>منصة تعليمية للطالب الموريتاني</p>
+  </header>
+
+  <nav>
+    <a href="#">الرئيسية</a>
+    <a href="#subjects">المواد</a>
+    <a href="#about">عن طالبي</a>
+  </nav>
+
+  <section class="hero">
+    <h1>مرحبًا بك في طالبي</h1>
+    <p>تعلّم، راجع، وطوّر مستواك الدراسي.</p>
+    <a class="button" href="#subjects">ابدأ التعلم</a>
+  </section>
+
+  <section class="subjects" id="subjects">
+    <h2>المواد الدراسية</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>الرياضيات</h3>
+        <p>دروس وتمارين للمراجعة.</p>
+      </div>
+
+      <div class="card">
+        <h3>الفيزياء</h3>
+        <p>مفاهيم وتمارين مبسطة.</p>
+      </div>
+
+      <div class="card">
+        <h3>الكيمياء</h3>
+        <p>مراجعة الدروس الأساسية.</p>
+      </div>
+
+      <div class="card">
+        <h3>اللغة العربية</h3>
+        <p>دروس ومراجعات لغوية.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="subjects" id="about">
+    <h2>عن طالبي</h2>
+    <p style="text-align:center;">
+      طالبي منصة تعليمية تهدف إلى مساعدة الطلاب على التعلم والمراجعة بطريقة بسيطة.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 طالبي - منصة تعليمية</p>
+  </footer>
+
 </body>
 </html>
