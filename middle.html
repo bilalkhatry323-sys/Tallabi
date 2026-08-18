@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>طالبي | المرحلة الإعدادية</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #1e293b;
+    }
+
+    header {
+      background: #2563eb;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 36px;
+    }
+
+    nav {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    nav a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      color: #2563eb;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 22px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 9px;
+    }
+
+    footer {
+      margin-top: 40px;
+      background: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>المرحلة الإعدادية</h1>
+    <p>اختر مستواك الدراسي</p>
+  </header>
+
+  <nav>
+    <a href="index.html">← العودة إلى الصفحة الرئيسية</a>
+  </nav>
+
+  <main class="container">
+
+    <h2>اختر المستوى</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>الأولى إعدادي</h3>
+        <p>دروس ومواد الأولى إعدادي</p>
+        <a class="button" href="#">دخول</a>
+      </div>
+
+      <div class="card">
+        <h3>الثانية إعدادي</h3>
+        <p>دروس ومواد الثانية إعدادي</p>
+        <a class="button" href="#">دخول</a>
+      </div>
+
+      <div class="card">
+        <h3>الثالثة إعدادي</h3>
+        <p>دروس ومواد الثالثة إعدادي</p>
+        <a class="button" href="#">دخول</a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 طالبي</p>
+  </footer>
+
+</body>
+</html>
