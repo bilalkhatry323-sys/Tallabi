@@ -26,37 +26,33 @@
       line-height: 1.7;
     }
 
-    /* ===== Header ===== */
-
+    /* الشريط العلوي */
     header {
       background: linear-gradient(135deg, #1769e0, #0d47a1);
       color: white;
-      padding: 55px 20px;
       text-align: center;
+      padding: 55px 20px;
     }
 
     header h1 {
       font-size: 46px;
-      margin-bottom: 8px;
-      letter-spacing: 1px;
+      margin-bottom: 5px;
     }
 
     header .arabic-name {
       font-size: 25px;
-      margin-bottom: 12px;
       font-weight: bold;
+      margin-bottom: 10px;
     }
 
     header p {
       font-size: 18px;
-      opacity: 0.95;
     }
 
-    /* ===== Navigation ===== */
-
+    /* القائمة */
     nav {
       background: white;
-      padding: 16px 20px;
+      padding: 16px;
       text-align: center;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
       position: sticky;
@@ -68,15 +64,14 @@
       color: #1769e0;
       text-decoration: none;
       font-weight: bold;
-      margin: 0 14px;
+      margin: 0 15px;
     }
 
     nav a:hover {
       text-decoration: underline;
     }
 
-    /* ===== Main ===== */
-
+    /* المحتوى */
     .container {
       width: 92%;
       max-width: 1100px;
@@ -91,7 +86,7 @@
 
     .welcome h2 {
       font-size: 31px;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .welcome p {
@@ -102,11 +97,10 @@
     .section-title {
       text-align: center;
       font-size: 28px;
-      margin-bottom: 28px;
+      margin-bottom: 30px;
     }
 
-    /* ===== Cards ===== */
-
+    /* البطاقات */
     .cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -124,12 +118,11 @@
 
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 9px 25px rgba(0, 0, 0, 0.12);
     }
 
-    .card .icon {
-      font-size: 42px;
-      margin-bottom: 12px;
+    .icon {
+      font-size: 45px;
+      margin-bottom: 10px;
     }
 
     .card h3 {
@@ -140,7 +133,7 @@
 
     .card p {
       color: #64748b;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
 
     .button {
@@ -148,7 +141,7 @@
       background: #1769e0;
       color: white;
       text-decoration: none;
-      padding: 11px 24px;
+      padding: 12px 27px;
       border-radius: 10px;
       font-weight: bold;
       transition: 0.2s;
@@ -158,8 +151,7 @@
       background: #0d47a1;
     }
 
-    /* ===== About ===== */
-
+    /* عن المنصة */
     .about {
       margin-top: 60px;
       background: white;
@@ -170,8 +162,8 @@
     }
 
     .about h2 {
-      margin-bottom: 12px;
       color: #1769e0;
+      margin-bottom: 12px;
     }
 
     .about p {
@@ -179,30 +171,24 @@
       font-size: 17px;
     }
 
-    /* ===== Footer ===== */
-
+    /* أسفل الصفحة */
     footer {
       margin-top: 50px;
       background: #172033;
       color: white;
       text-align: center;
-      padding: 25px 15px;
+      padding: 25px;
     }
 
     footer strong {
       color: #60a5fa;
     }
 
-    /* ===== Mobile ===== */
-
+    /* الهاتف */
     @media (max-width: 750px) {
 
-      header {
-        padding: 40px 15px;
-      }
-
       header h1 {
-        font-size: 37px;
+        font-size: 36px;
       }
 
       header .arabic-name {
@@ -221,19 +207,15 @@
       .welcome h2 {
         font-size: 26px;
       }
-
-      .section-title {
-        font-size: 25px;
-      }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- ===== Header ===== -->
-
+  <!-- الرأس -->
   <header>
+
     <h1>MauriClass</h1>
 
     <div class="arabic-name">
@@ -243,18 +225,29 @@
     <p>
       منصّة تعليمية للطلاب في موريتانيا
     </p>
+
   </header>
 
-  <!-- ===== Navigation ===== -->
 
+  <!-- القائمة -->
   <nav>
-    <a href="index.html">الرئيسية</a>
-    <a href="#levels">المراحل الدراسية</a>
-    <a href="#about">عن المنصة</a>
+
+    <a href="./index.html">
+      الرئيسية
+    </a>
+
+    <a href="#levels">
+      المراحل الدراسية
+    </a>
+
+    <a href="#about">
+      عن المنصة
+    </a>
+
   </nav>
 
-  <!-- ===== Main ===== -->
 
+  <!-- المحتوى الرئيسي -->
   <main class="container">
 
     <section class="welcome">
@@ -269,21 +262,24 @@
 
     </section>
 
-    <!-- ===== Educational Levels ===== -->
 
+    <!-- المراحل -->
     <section id="levels">
 
       <h2 class="section-title">
         اختر المرحلة الدراسية
       </h2>
 
+
       <div class="cards">
 
-        <!-- Primary -->
 
+        <!-- الابتدائي -->
         <div class="card">
 
-          <div class="icon">📚</div>
+          <div class="icon">
+            📚
+          </div>
 
           <h3>
             المرحلة الابتدائية
@@ -293,17 +289,22 @@
             دروس ومواد المرحلة الابتدائية.
           </p>
 
-          <a class="button" href="primary.html">
+          <a
+            class="button"
+            href="./primary.html"
+          >
             الدخول
           </a>
 
         </div>
 
-        <!-- Middle -->
 
+        <!-- الإعدادي -->
         <div class="card">
 
-          <div class="icon">🎓</div>
+          <div class="icon">
+            🎓
+          </div>
 
           <h3>
             المرحلة الإعدادية
@@ -313,17 +314,22 @@
             الأولى والثانية والثالثة إعدادي.
           </p>
 
-          <a class="button" href="middle.html">
+          <a
+            class="button"
+            href="./middle.html"
+          >
             الدخول
           </a>
 
         </div>
 
-        <!-- High School -->
 
+        <!-- الثانوي -->
         <div class="card">
 
-          <div class="icon">🏫</div>
+          <div class="icon">
+            🏫
+          </div>
 
           <h3>
             المرحلة الثانوية
@@ -333,18 +339,24 @@
             دروس ومواد المرحلة الثانوية.
           </p>
 
-          <a class="button" href="#">
-            الدخول
+          <!-- سنربطه بصفحة الثانوية عندما ننشئها -->
+          <a
+            class="button"
+            href="#"
+            onclick="alert('صفحة المرحلة الثانوية قيد الإنشاء حالياً'); return false;"
+          >
+            قريباً
           </a>
 
         </div>
+
 
       </div>
 
     </section>
 
-    <!-- ===== About ===== -->
 
+    <!-- عن المنصة -->
     <section id="about" class="about">
 
       <h2>
@@ -352,20 +364,23 @@
       </h2>
 
       <p>
-        MauriClass هي منصّة تعليمية تهدف إلى تنظيم الدروس
-        والمواد الدراسية ومساعدة الطلاب على الوصول إليها بسهولة.
+        MauriClass هي منصّة تعليمية تهدف إلى تنظيم
+        الدروس والمواد الدراسية ومساعدة الطلاب على
+        الوصول إليها بسهولة.
       </p>
 
     </section>
 
   </main>
 
-  <!-- ===== Footer ===== -->
 
+  <!-- التذييل -->
   <footer>
 
     <p>
-      © 2026 <strong>MauriClass</strong> — موري كلاس
+      © 2026
+      <strong>MauriClass</strong>
+      — موري كلاس
     </p>
 
   </footer>
