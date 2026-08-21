@@ -1,1 +1,256 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MauriClass | الأولى إعدادي</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Tahoma, sans-serif;
+      background: #f5f7fb;
+      color: #172033;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1769e0, #0d47a1);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 19px;
+    }
+
+    nav {
+      background: white;
+      padding: 16px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    nav a {
+      color: #1769e0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1050px;
+      margin: auto;
+      padding: 45px 0;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .title h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .title p {
+      color: #64748b;
+      font-size: 17px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 32px 20px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      transition: 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      font-size: 45px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      color: #1769e0;
+      font-size: 23px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #64748b;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #1769e0;
+      color: white;
+      text-decoration: none;
+      padding: 11px 24px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #0d47a1;
+    }
+
+    footer {
+      margin-top: 50px;
+      background: #172033;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 750px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>MauriClass</h1>
+    <p>الأولى إعدادي</p>
+  </header>
+
+  <nav>
+    <a href="./middle.html">
+      ← العودة إلى المرحلة الإعدادية
+    </a>
+  </nav>
+
+  <main class="container">
+
+    <section class="title">
+
+      <h2>المواد الدراسية</h2>
+
+      <p>
+        اختر المادة للوصول إلى الدروس والتمارين.
+      </p>
+
+    </section>
+
+
+    <section class="cards">
+
+
+      <!-- الرياضيات -->
+
+      <div class="card">
+
+        <div class="icon">
+          📐
+        </div>
+
+        <h3>
+          Mathématiques
+        </h3>
+
+        <p>
+          الرياضيات
+        </p>
+
+        <a class="button" href="#">
+          الدخول
+        </a>
+
+      </div>
+
+
+      <!-- الفيزياء -->
+
+      <div class="card">
+
+        <div class="icon">
+          🔬
+        </div>
+
+        <h3>
+          Physique
+        </h3>
+
+        <p>
+          الفيزياء
+        </p>
+
+        <a class="button" href="#">
+          الدخول
+        </a>
+
+      </div>
+
+
+      <!-- الفرنسية -->
+
+      <div class="card">
+
+        <div class="icon">
+          📖
+        </div>
+
+        <h3>
+          Français
+        </h3>
+
+        <p>
+          اللغة الفرنسية
+        </p>
+
+        <a class="button" href="#">
+          الدخول
+        </a>
+
+      </div>
+
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <p>
+      © 2026 MauriClass — موري كلاس
+    </p>
+
+  </footer>
+
+</body>
+
+</html>
