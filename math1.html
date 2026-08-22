@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="fr" dir="ltr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>MauriClass | Mathématiques | الأولى إعدادي</title>
+  <title>MauriClass | Mathématiques | 1ère AS</title>
 
   <style>
     * {
@@ -15,7 +15,7 @@
     }
 
     body {
-      font-family: Arial, Tahoma, sans-serif;
+      font-family: Arial, sans-serif;
       background: #f5f7fb;
       color: #172033;
       line-height: 1.7;
@@ -25,16 +25,16 @@
       background: linear-gradient(135deg, #1769e0, #0d47a1);
       color: white;
       text-align: center;
-      padding: 50px 20px;
+      padding: 55px 20px;
     }
 
     header h1 {
-      font-size: 40px;
+      font-size: 42px;
       margin-bottom: 8px;
     }
 
     header p {
-      font-size: 18px;
+      font-size: 20px;
     }
 
     nav {
@@ -52,48 +52,58 @@
 
     .container {
       width: 92%;
-      max-width: 1100px;
+      max-width: 1000px;
       margin: auto;
       padding: 45px 0;
     }
 
-    .title {
+    .intro {
       text-align: center;
       margin-bottom: 35px;
     }
 
-    .title h2 {
+    .intro h2 {
       font-size: 30px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
-    .title p {
+    .intro p {
       color: #64748b;
-      font-size: 17px;
     }
 
-    .lessons {
+    .sections {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 22px;
+      gap: 25px;
     }
 
-    .lesson {
+    .section-card {
       background: white;
-      padding: 28px 22px;
-      border-radius: 18px;
+      padding: 40px 25px;
+      border-radius: 20px;
+      text-align: center;
       box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      transition: 0.2s ease;
     }
 
-    .lesson h3 {
+    .section-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+
+    .section-card h3 {
       color: #1769e0;
-      font-size: 22px;
-      margin-bottom: 10px;
+      font-size: 28px;
+      margin-bottom: 12px;
     }
 
-    .lesson p {
+    .section-card p {
       color: #64748b;
-      margin-bottom: 18px;
+      margin-bottom: 22px;
     }
 
     .button {
@@ -101,7 +111,7 @@
       background: #1769e0;
       color: white;
       text-decoration: none;
-      padding: 10px 22px;
+      padding: 12px 28px;
       border-radius: 10px;
       font-weight: bold;
     }
@@ -118,13 +128,13 @@
       padding: 25px;
     }
 
-    @media (max-width: 750px) {
-      .lessons {
+    @media (max-width: 700px) {
+      .sections {
         grid-template-columns: 1fr;
       }
 
       header h1 {
-        font-size: 32px;
+        font-size: 34px;
       }
     }
   </style>
@@ -137,7 +147,7 @@
     <h1>Mathématiques</h1>
 
     <p>
-      الرياضيات — الأولى إعدادي
+      1ère AS — MauriClass
     </p>
 
   </header>
@@ -146,7 +156,7 @@
   <nav>
 
     <a href="./middle1.html">
-      ← العودة إلى مواد الأولى إعدادي
+      ← Retour aux matières
     </a>
 
   </nav>
@@ -154,119 +164,73 @@
 
   <main class="container">
 
-    <section class="title">
+    <section class="intro">
 
       <h2>
-        دروس الرياضيات
+        Choisissez une partie
       </h2>
 
       <p>
-        اختر الباب الذي تريد دراسته.
+        Des cours courts, clairs et conçus pour faciliter la compréhension et la mémorisation.
       </p>
 
     </section>
 
 
-    <section class="lessons">
+    <section class="sections">
 
 
-      <div class="lesson">
+      <!-- ALGÈBRE -->
+
+      <div class="section-card">
+
+        <div class="icon">
+          🔢
+        </div>
 
         <h3>
-          الأعداد والعمليات
+          ALGÈBRE
         </h3>
 
         <p>
-          مراجعة الأعداد والعمليات الحسابية الأساسية.
+          Nombres, calculs, fractions, puissances,
+          proportionnalité et autres notions algébriques.
         </p>
 
-        <a class="button" href="#">
-          فتح الدرس
+        <a
+          class="button"
+          href="#"
+          onclick="alert('La section Algèbre est en préparation.'); return false;"
+        >
+          Entrer
         </a>
 
       </div>
 
 
-      <div class="lesson">
+      <!-- GÉOMÉTRIE -->
+
+      <div class="section-card">
+
+        <div class="icon">
+          📐
+        </div>
 
         <h3>
-          الكسور
+          GÉOMÉTRIE
         </h3>
 
         <p>
-          مفهوم الكسور والعمليات عليها.
+          Droites, angles, triangles, cercles,
+          symétries et géométrie dans l’espace.
         </p>
 
-        <a class="button" href="#">
-          فتح الدرس
-        </a>
-
-      </div>
-
-
-      <div class="lesson">
-
-        <h3>
-          الأعداد العشرية
-        </h3>
-
-        <p>
-          قراءة وكتابة ومقارنة الأعداد العشرية.
-        </p>
-
-        <a class="button" href="#">
-          فتح الدرس
-        </a>
-
-      </div>
-
-
-      <div class="lesson">
-
-        <h3>
-          الهندسة
-        </h3>
-
-        <p>
-          الأشكال الهندسية والمفاهيم الأساسية في الهندسة.
-        </p>
-
-        <a class="button" href="#">
-          فتح الدرس
-        </a>
-
-      </div>
-
-
-      <div class="lesson">
-
-        <h3>
-          القياس
-        </h3>
-
-        <p>
-          الأطوال والمساحات والأحجام ووحدات القياس.
-        </p>
-
-        <a class="button" href="#">
-          فتح الدرس
-        </a>
-
-      </div>
-
-
-      <div class="lesson">
-
-        <h3>
-          التناسب
-        </h3>
-
-        <p>
-          النسب والتناسب وتطبيقاتهما.
-        </p>
-
-        <a class="button" href="#">
-          فتح الدرس
+        <a
+          class="button"
+          href="#"
+          onclick="alert('La section Géométrie est en préparation.'); return false;"
+        >
+          Entrer
         </a>
 
       </div>
@@ -280,7 +244,7 @@
   <footer>
 
     <p>
-      © 2026 MauriClass — موري كلاس
+      © 2026 MauriClass — Mathématiques 1ère AS
     </p>
 
   </footer>
