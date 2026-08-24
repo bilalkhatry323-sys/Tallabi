@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MauriClass | Nombres et opérations</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #172033;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1769e0, #0d47a1);
+      color: white;
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    header h1 {
+      font-size: 38px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    nav {
+      background: white;
+      padding: 16px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    nav a {
+      color: #1769e0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 0;
+    }
+
+    .box {
+      background: white;
+      padding: 28px;
+      margin-bottom: 22px;
+      border-radius: 18px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+    }
+
+    .box h2 {
+      color: #1769e0;
+      margin-bottom: 14px;
+      font-size: 25px;
+    }
+
+    .rule {
+      background: #eef5ff;
+      border-left: 5px solid #1769e0;
+      padding: 18px;
+      border-radius: 10px;
+      font-size: 19px;
+      font-weight: bold;
+    }
+
+    .example {
+      background: #f8fafc;
+      padding: 18px;
+      border-radius: 10px;
+      font-size: 18px;
+    }
+
+    .exercise {
+      background: #fff8e8;
+      padding: 18px;
+      border-radius: 10px;
+    }
+
+    .answer {
+      margin-top: 12px;
+      color: #1769e0;
+      font-weight: bold;
+    }
+
+    .summary {
+      background: #eaf7ee;
+      padding: 22px;
+      border-radius: 15px;
+    }
+
+    .summary li {
+      margin: 7px 0;
+    }
+
+    footer {
+      margin-top: 30px;
+      background: #172033;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      .box {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Nombres et opérations</h1>
+    <p>Mathématiques — 1ère AS</p>
+  </header>
+
+  <nav>
+    <a href="./algebre1.html">
+      ← Retour à l'Algèbre
+    </a>
+  </nav>
+
+  <main class="container">
+
+    <!-- Explication -->
+
+    <section class="box">
+
+      <h2>📘 Explication</h2>
+
+      <p>
+        Les nombres permettent de représenter des quantités.
+        Pour travailler avec eux, nous utilisons principalement
+        quatre opérations :
+      </p>
+
+      <br>
+
+      <p>
+        <strong>Addition (+)</strong> — réunir des quantités.
+      </p>
+
+      <p>
+        <strong>Soustraction (−)</strong> — trouver une différence.
+      </p>
+
+      <p>
+        <strong>Multiplication (×)</strong> — addition répétée.
+      </p>
+
+      <p>
+        <strong>Division (÷)</strong> — partager une quantité.
+      </p>
+
+    </section>
+
+
+    <!-- Règle -->
+
+    <section class="box">
+
+      <h2>📌 Règle essentielle</h2>
+
+      <div class="rule">
+
+        Dans une expression contenant plusieurs opérations,
+        on respecte l'ordre des calculs.
+
+      </div>
+
+      <br>
+
+      <p>
+        1. Parenthèses
+      </p>
+
+      <p>
+        2. Multiplications et divisions
+      </p>
+
+      <p>
+        3. Additions et soustractions
+      </p>
+
+    </section>
+
+
+    <!-- Exemple -->
+
+    <section class="box">
+
+      <h2>✏️ Exemple</h2>
+
+      <div class="example">
+
+        <p>
+          Calculons :
+        </p>
+
+        <br>
+
+        <p>
+          <strong>8 + 3 × 4</strong>
+        </p>
+
+        <br>
+
+        <p>
+          On commence par la multiplication :
+        </p>
+
+        <p>
+          3 × 4 = 12
+        </p>
+
+        <p>
+          Puis :
+        </p>
+
+        <p>
+          8 + 12 = <strong>20</strong>
+        </p>
+
+        <br>
+
+        <p>
+          Donc :
+          <strong>8 + 3 × 4 = 20</strong>
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- Exercice -->
+
+    <section class="box">
+
+      <h2>🧠 Exercice</h2>
+
+      <div class="exercise">
+
+        <p>
+          Calcule :
+        </p>
+
+        <br>
+
+        <p>
+          <strong>A = 10 + 2 × 5</strong>
+        </p>
+
+        <p>
+          <strong>B = (10 + 2) × 5</strong>
+        </p>
+
+        <br>
+
+        <details>
+
+          <summary>
+            Voir la correction
+          </summary>
+
+          <div class="answer">
+
+            <p>
+              A = 10 + 10 = <strong>20</strong>
+            </p>
+
+            <p>
+              B = 12 × 5 = <strong>60</strong>
+            </p>
+
+          </div>
+
+        </details>
+
+      </div>
+
+    </section>
+
+
+    <!-- À retenir -->
+
+    <section class="box">
+
+      <h2>⭐ À retenir</h2>
+
+      <div class="summary">
+
+        <ul>
+
+          <li>
+            Une expression peut contenir plusieurs opérations.
+          </li>
+
+          <li>
+            Les parenthèses sont calculées en premier.
+          </li>
+
+          <li>
+            La multiplication et la division passent avant
+            l'addition et la soustraction.
+          </li>
+
+          <li>
+            Il faut toujours respecter l'ordre des opérations.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <p>
+      © 2026 MauriClass — Mathématiques 1ère AS
+    </p>
+
+  </footer>
+
+</body>
+
+</html>
