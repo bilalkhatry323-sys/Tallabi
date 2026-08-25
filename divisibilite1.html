@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MauriClass | Divisibilité | 1ère AS</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #172033;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1769e0, #0d47a1);
+      color: white;
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    header h1 {
+      font-size: 38px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    nav {
+      background: white;
+      padding: 16px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    nav a {
+      color: #1769e0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 0;
+    }
+
+    .box {
+      background: white;
+      padding: 28px;
+      margin-bottom: 22px;
+      border-radius: 18px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+    }
+
+    .box h2 {
+      color: #1769e0;
+      margin-bottom: 14px;
+      font-size: 25px;
+    }
+
+    .rule {
+      background: #eef5ff;
+      border-left: 5px solid #1769e0;
+      padding: 18px;
+      border-radius: 10px;
+      font-size: 19px;
+      font-weight: bold;
+    }
+
+    .example {
+      background: #f8fafc;
+      padding: 18px;
+      border-radius: 10px;
+      font-size: 18px;
+    }
+
+    .exercise {
+      background: #fff8e8;
+      padding: 18px;
+      border-radius: 10px;
+    }
+
+    .answer {
+      margin-top: 12px;
+      color: #1769e0;
+      font-weight: bold;
+    }
+
+    .summary {
+      background: #eaf7ee;
+      padding: 22px;
+      border-radius: 15px;
+    }
+
+    .summary li {
+      margin: 7px 0;
+    }
+
+    footer {
+      margin-top: 30px;
+      background: #172033;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      .box {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Divisibilité</h1>
+    <p>Mathématiques — 1ère AS</p>
+  </header>
+
+  <nav>
+    <a href="./algebre1.html">
+      ← Retour à l'Algèbre
+    </a>
+  </nav>
+
+  <main class="container">
+
+    <section class="box">
+
+      <h2>📘 Explication</h2>
+
+      <p>
+        Un nombre entier est divisible par un autre nombre
+        lorsqu'une division donne un quotient entier
+        et un reste égal à zéro.
+      </p>
+
+      <br>
+
+      <p>
+        Exemple :
+        <strong>24 est divisible par 6</strong>,
+        car 24 ÷ 6 = 4.
+      </p>
+
+    </section>
+
+
+    <section class="box">
+
+      <h2>📌 Règles essentielles</h2>
+
+      <div class="rule">
+
+        Un nombre est divisible par 2 s'il se termine par
+        0, 2, 4, 6 ou 8.
+
+      </div>
+
+      <br>
+
+      <div class="rule">
+
+        Un nombre est divisible par 5 s'il se termine par
+        0 ou 5.
+
+      </div>
+
+      <br>
+
+      <div class="rule">
+
+        Un nombre est divisible par 10 s'il se termine par 0.
+
+      </div>
+
+      <br>
+
+      <div class="rule">
+
+        Un nombre est divisible par 3 si la somme de ses chiffres
+        est divisible par 3.
+
+      </div>
+
+    </section>
+
+
+    <section class="box">
+
+      <h2>✏️ Exemple</h2>
+
+      <div class="example">
+
+        <p>
+          Le nombre <strong>126</strong> est-il divisible par 3 ?
+        </p>
+
+        <br>
+
+        <p>
+          1 + 2 + 6 = 9
+        </p>
+
+        <p>
+          9 est divisible par 3.
+        </p>
+
+        <br>
+
+        <p>
+          Donc <strong>126 est divisible par 3</strong>.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section class="box">
+
+      <h2>🧠 Exercice</h2>
+
+      <div class="exercise">
+
+        <p>
+          Indique si les nombres suivants sont divisibles par 2,
+          5 ou 10 :
+        </p>
+
+        <br>
+
+        <p>
+          <strong>A = 120</strong>
+        </p>
+
+        <p>
+          <strong>B = 135</strong>
+        </p>
+
+        <p>
+          <strong>C = 248</strong>
+        </p>
+
+        <br>
+
+        <details>
+
+          <summary>
+            Voir la correction
+          </summary>
+
+          <div class="answer">
+
+            <p>
+              120 est divisible par 2, 5 et 10.
+            </p>
+
+            <p>
+              135 est divisible par 5.
+            </p>
+
+            <p>
+              248 est divisible par 2.
+            </p>
+
+          </div>
+
+        </details>
+
+      </div>
+
+    </section>
+
+
+    <section class="box">
+
+      <h2>⭐ À retenir</h2>
+
+      <div class="summary">
+
+        <ul>
+
+          <li>
+            Divisible signifie que le reste de la division est zéro.
+          </li>
+
+          <li>
+            Divisible par 2 : le dernier chiffre est pair.
+          </li>
+
+          <li>
+            Divisible par 5 : le dernier chiffre est 0 ou 5.
+          </li>
+
+          <li>
+            Divisible par 10 : le dernier chiffre est 0.
+          </li>
+
+          <li>
+            Divisible par 3 : la somme des chiffres est divisible par 3.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <p>
+      © 2026 MauriClass — Algèbre 1ère AS
+    </p>
+
+  </footer>
+
+</body>
+
+</html>
